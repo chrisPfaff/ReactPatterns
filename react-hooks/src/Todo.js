@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Todo = ({ todo }) => <div className="todo">{todo.text}</div>;
 

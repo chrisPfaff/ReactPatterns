@@ -17,6 +17,12 @@ function App() {
       isCompleted: false
     }
   ]);
+
+  const addTodo = text => {
+    const newTodos = [...todos, { text }];
+    setTodos(newTodos);
+  };
+
   return (
     <div className="app">
       <header className="app-header">React Hooks</header>
