@@ -11,7 +11,7 @@ const ColorPicker = props => {
     props.changeColor(color);
   };
   return (
-    <div>
+    <div className="colorPicker">
       <form onSubmit={changeColorInPixel}>
         <select
           onChange={HandleColor}
@@ -23,6 +23,14 @@ const ColorPicker = props => {
           <option value="blue">Blue</option>
           <option value="red">Red</option>
           <option value="crimson">Crimson</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="AntiqueWhite">AntiqueWhite</option>
+          <option value="Aquamarine">Aquamarine</option>
+          <option value="BlanchedAlmond">BlanchedAlmond</option>
+          <option value="Maroon">Maroon</option>
+          <option value="Yellow">Yellow</option>
+          <option value="MediumPurple">MediumPurple</option>
         </select>
         <input type="submit" value="Submit" />
       </form>
