@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 0;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 996px;
+  height: 1000px;
+}
+
+.pixel {
+  width: 81px;
+  border: 1px solid black;
+}
