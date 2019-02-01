@@ -6,7 +6,7 @@ import ColorPicker from "./components/ColorPicker";
 
 function App() {
   const [color, setColor] = useState(0);
-  console.log(localStorage);
+
   return (
     <div className="App">
       <ColorPicker currentColor={color} setColor={color => setColor(color)} />

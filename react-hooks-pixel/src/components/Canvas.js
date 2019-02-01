@@ -13,9 +13,23 @@ const Canvas = props => {
       )
   );
 
+  const cache = localStorage.getItem("value");
+
+  const checkLocal = () => {
+    if (cache) {
+      // setMatrix(JSON.parse(cache));
+      console.log(cache);
+    } else {
+      console.log("no storage");
+    }
+  };
+
+  checkLocal();
+
   const changeColor = (rowIndex, colIndex) => {
     const newMatrix = JSON.parse(JSON.stringify(matrix));
     newMatrix[rowIndex][colIndex] = props.currentColor;
+    localStorage.setItem("value", JSON.stringify(newMatrix));
     setMatrix(newMatrix);
   };
 
