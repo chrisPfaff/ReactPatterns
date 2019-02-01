@@ -10,19 +10,24 @@
 .darkblue {
   background-color: rgb(33, 150, 243);
 }
+.red {
+  background-color: red;
+}
+.aliceblue {
+  background-color: aliceblue;
+}
 
+.brown {
+  background-color: brown;
+}
 .pixel {
   width: 30px;
   height: 30px;
   border: 1px solid lightgray;
   box-sizing: border-box;
 }
-
-.pixel {
-  width: 30px;
-  height: 30px;
-  border: 1px solid lightgray;
-  box-sizing: border-box;
+.pixel.current-color {
+  border: 4px solid yellow;
 }
 
 .App {

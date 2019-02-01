@@ -1,41 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import Pixel from "./Pixel";
 
-const ColorPicker = props => {
-  const [color, selectColor] = useState("");
+import Colors from "../Colors";
 
-  const HandleColor = event => {
-    selectColor(event.target.value);
-  };
-  const changeColorInPixel = e => {
-    e.preventDefault();
-    props.changeColor(color);
-  };
+export default props => {
   return (
-    <div className="colorPicker">
-      <form onSubmit={changeColorInPixel}>
-        <select
-          onChange={HandleColor}
-          value={color}
-          name="color"
-          id="colorSelect"
-        >
-          <option value="green">Green</option>
-          <option value="blue">Blue</option>
-          <option value="red">Red</option>
-          <option value="crimson">Crimson</option>
-          <option value="white">White</option>
-          <option value="black">Black</option>
-          <option value="AntiqueWhite">AntiqueWhite</option>
-          <option value="Aquamarine">Aquamarine</option>
-          <option value="BlanchedAlmond">BlanchedAlmond</option>
-          <option value="Maroon">Maroon</option>
-          <option value="Yellow">Yellow</option>
-          <option value="MediumPurple">MediumPurple</option>
-        </select>
-        <input type="submit" value="Submit" />
-      </form>
+    <div className="colorpicker">
+      {Colors.map((color, index) => {
+        return (
+          <Pixel
+            key={index}
+            background={color}
+            current={Colors[props.currentColor] === color}
+            onClick={e => props.setColor(index)}
+          />
+        );
+      })}
     </div>
   );
 };
-
-export default ColorPicker;
