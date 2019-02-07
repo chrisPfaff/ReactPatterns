@@ -1,0 +1,41 @@
+body {
+  background: rgb(52, 50, 50);
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+.Display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+
+  &-header {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    background: wheat;
+    font-size: 2em;
+    min-width: 300px;
+  }
+
+  &-footer {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    background: wheat;
+    font-size: 2em;
+    min-width: 300px;
+  }
+}
+
+img {
+  max-width: 300px;
+}
