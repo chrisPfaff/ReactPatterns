@@ -24,6 +24,7 @@
 
 .player {
   display: flex;
+  padding-bottom: 30px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,11 +34,12 @@
 }
 
 .dealer {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-color: rgb(16, 66, 16);
 }
 
@@ -88,4 +90,15 @@
 .table {
   width: 100%;
   background-color: rgb(46, 25, 2);
+}
+
+.endgame {
+  background: rgb(16, 66, 16);
+  height: 100vh;
+  h1 {
+    margin: auto;
+    padding-top: 200px;
+    font-size: 100px;
+    color: rgb(253, 252, 176);
+  }
 }
