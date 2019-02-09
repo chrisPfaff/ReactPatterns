@@ -20,6 +20,10 @@
 .card {
   width: 130px;
   margin: 10px;
+  border-radius: 2px;
+  -webkit-box-shadow: 10px 10px 48px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 48px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 48px 0px rgba(0, 0, 0, 0.75);
 }
 
 .player {
@@ -59,6 +63,7 @@
   border-radius: 6px;
   border: 2px solid white;
   background: rgb(16, 66, 16);
+  outline: none;
 
   &-begin {
     font-family: "Raleway", sans-serif;
@@ -70,6 +75,7 @@
     border-radius: 6px;
     border: 2px solid white;
     background: red;
+    outline: none;
   }
   &-begin:hover {
     cursor: pointer;
