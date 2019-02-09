@@ -7,13 +7,19 @@
   left: 0;
   right: 0;
   bottom: 0;
+  background: url("https://www.free-freecell-solitaire.com/solitaire/images/backgrounds/1920x1200/green_felt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   &-header {
     font-family: "Raleway", sans-serif;
-    font-size: 50px;
+    font-size: 60px;
+    letter-spacing: 10px;
     width: 100%;
-    color: rgb(253, 252, 176);
-    background-color: rgb(46, 25, 2);
+    background: url("https://i.pinimg.com/originals/04/79/90/0479901da7f61db9e7c6f91160773fa4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -44,8 +50,7 @@
 }
 
 .container {
-  height: 100vh;
-  background: rgb(16, 66, 16);
+  height: 80vh;
 }
 
 .cardlist {
@@ -98,7 +103,10 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: rgb(46, 25, 2);
+  background: url("https://i.pinimg.com/originals/04/79/90/0479901da7f61db9e7c6f91160773fa4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(250, 250, 250);
 }
 
 .endgame {
@@ -108,24 +116,24 @@
     margin: auto;
     padding-top: 200px;
     font-size: 100px;
-    color: rgb(253, 252, 176);
+    color: rgb(231, 229, 82);
   }
 }
 
 .coaster {
-  bottom: 120px;
-  left: 40px;
+  bottom: 240px;
+  left: 10px;
   position: absolute;
   display: block;
-  width: 126px;
-  height: 140px;
-  background-color: red;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  height: 30px;
+  width: 30px;
+  background-color: olive;
+  border-radius: 100px;
 }
 
 .cocktail {
   position: absolute;
   height: 180px;
-  bottom: 170px;
+  bottom: 70px;
   left: 15px;
 }
