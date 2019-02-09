@@ -30,6 +30,11 @@ function App() {
     setDealerCards(dealerCards.concat(num));
   };
 
+  const handleBeginClick = () => {
+    addNewDealerCard();
+    addNewPlayerCard();
+  };
+
   const addCardBack = () => {
     setDealerCards(dealerCards.concat(0));
   };
@@ -52,18 +57,30 @@ function App() {
     <div className="App">
       <header className="App-header">Black Jack</header>
       {winner === 0 ? (
-        <div>
+        <div className="container">
+          <div className="coaster" />
+          <img
+            className="cocktail"
+            src={"./img/cocktail.svg"}
+            alt="cocktail glass"
+          />
           <Dealer>
             <CardList cards={dealerCards} />
           </Dealer>
-          <Player
-            addNewPlayerCard={addNewPlayerCard}
-            addNewDealerCard={addNewDealerCard}
-            addCardBack={addCardBack}
-            stay={stay}
-          >
+          <Player>
             <CardList cards={playerCards} />
           </Player>{" "}
+          <footer className="table">
+            <button className="btn-begin" onClick={handleBeginClick}>
+              Begin
+            </button>
+            <button onClick={addNewPlayerCard} className="btn">
+              Hit
+            </button>
+            <button onClick={stay} className="btn">
+              Stay
+            </button>
+          </footer>
         </div>
       ) : (
         <Winner message={winner} />
